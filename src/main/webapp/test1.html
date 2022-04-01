@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML5_list_label
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/1
+  Time(创建时间)： 20:07
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="wandered_jelly.css">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        body{
+            background-color: #c1faff;
+        }
+        select {
+            width: 20em;
+            display: block;
+            margin: 10px;
+        }
+        div.p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<div class="monster">
+    <span class="body"></span>
+    <span class="eyes"></span>
+</div>
+
+
+
+<div class="p">
+    <div class="animated slideInDown" >
+        <label>简单下拉菜单（单选）：
+            <select>
+                <option value="apple">苹果</option>
+                <option value="cherry">樱桃</option>
+                <option value="grape">葡萄</option>
+            </select>
+        </label>
+
+        <label>
+            分组下拉菜单（单选）：
+            <select>
+                <optgroup label="水果类">
+                    <option value="apple">苹果</option>
+                    <option value="cherry">樱桃</option>
+                    <option value="grape">葡萄</option>
+                </optgroup>
+                <optgroup label="蔬菜类">
+                    <option value="potato">土豆</option>
+                    <option value="tomato">番茄</option>
+                    <option value="eggplant">茄子</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <label>
+            简单列表菜单（多选）：
+            <select multiple="multiple">
+                <option value="apple">苹果</option>
+                <option value="cherry">樱桃</option>
+                <option value="grape">葡萄</option>
+            </select>
+        </label>
+
+        <label>
+            分组列表菜单（多选）：
+            <select multiple="multiple" size="8">
+                <optgroup label="水果类">
+                    <option value="apple">苹果</option>
+                    <option value="cherry">樱桃</option>
+                    <option value="grape">葡萄</option>
+                </optgroup>
+                <optgroup label="蔬菜类">
+                    <option value="potato">土豆</option>
+                    <option value="tomato">番茄</option>
+                    <option value="eggplant">茄子</option>
+                </optgroup>
+            </select>
+        </label>
+    </div>
+</div>
+</body>
+</html>
